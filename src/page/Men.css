@@ -1,0 +1,540 @@
+/* =========================================
+   MEN PAGE
+========================================= */
+
+.men-page {
+  width: 100%;
+  background: #ffffff;
+  color: #171717;
+}
+
+
+/* =========================================
+   BANNER
+========================================= */
+
+.men-banner {
+  height: 360px;
+
+  background:
+    linear-gradient(
+      rgba(16, 16, 16, 0.72),
+      rgba(16, 16, 16, 0.72)
+    ),
+    url("https://images.unsplash.com/photo-1488161628813-04466f872be2?auto=format&fit=crop&w=1600&q=80");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  color: white;
+}
+
+.men-banner-content p {
+  color: #C9A227;
+
+  font-size: 13px;
+  font-weight: bold;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 18px;
+}
+
+.men-banner-content h1 {
+  font-size: 48px;
+
+  letter-spacing: 3px;
+
+  margin: 0 0 15px;
+}
+
+.men-banner-content span {
+  color: #ddd;
+
+  font-size: 16px;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.men-intro {
+  max-width: 760px;
+
+  margin: auto;
+
+  text-align: center;
+
+  padding: 75px 20px 45px;
+}
+
+.men-small-title {
+  color: #C9A227;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 12px;
+}
+
+.men-intro h2 {
+  font-size: 36px;
+
+  margin: 0 0 18px;
+}
+
+.men-intro h2 span {
+  color: #C9A227;
+}
+
+.men-intro > p:last-child {
+  color: #777;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   CATEGORIES
+========================================= */
+
+.men-categories {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+
+  padding: 15px 7% 55px;
+}
+
+.men-categories button {
+  background: white;
+
+  border: 1px solid #ddd;
+
+  padding: 12px 22px;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.men-categories button:hover,
+.men-categories .active-category {
+  background: #101010;
+
+  border-color: #101010;
+
+  color: #C9A227;
+}
+
+
+/* =========================================
+   PRODUCTS SECTION
+========================================= */
+
+.men-products-section {
+  background: #f7f4ee;
+
+  padding: 75px 7% 90px;
+}
+
+
+/* Products Header */
+
+.men-products-header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-bottom: 40px;
+}
+
+.men-products-header h2 {
+  margin: 0;
+
+  font-size: 32px;
+}
+
+.men-products-header > p {
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   PRODUCT GRID
+========================================= */
+
+.men-products-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 28px;
+
+  max-width: 1450px;
+
+  margin: auto;
+}
+
+
+/* =========================================
+   PRODUCT CARD
+========================================= */
+
+.men-product-card {
+  background: white;
+
+  transition: 0.3s;
+
+  overflow: hidden;
+}
+
+.men-product-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================
+   PRODUCT IMAGE
+========================================= */
+
+.men-product-image {
+  height: 390px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: #eee;
+}
+
+.men-product-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: 0.5s;
+}
+
+.men-product-card:hover
+.men-product-image img {
+  transform: scale(1.05);
+}
+
+
+/* Discount */
+
+.discount-badge {
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  background: #C9A227;
+
+  color: #101010;
+
+  padding: 7px 10px;
+
+  font-size: 11px;
+  font-weight: bold;
+}
+.product-heart {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: white;
+  color: #171717;
+
+  font-size: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+
+  z-index: 5;
+}
+
+.product-heart:hover {
+  background: #171717;
+  color: #c9a227;
+}
+
+.men-product-card:hover
+ {
+  bottom: 0;
+}
+
+
+
+/* =========================================
+   PRODUCT DETAILS
+========================================= */
+
+.men-product-details {
+  padding: 20px;
+}
+
+.product-category {
+  color: #999;
+
+  font-size: 11px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.5px;
+
+  margin-bottom: 7px;
+}
+
+.men-product-details h3 {
+  font-size: 16px;
+
+  margin: 0 0 12px;
+
+  font-weight: 600;
+}
+
+.product-price {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 17px;
+}
+
+.product-price strong {
+  font-size: 17px;
+}
+
+.product-price del {
+  color: #999;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   ADD TO CART
+========================================= */
+
+.add-cart-btn {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #101010;
+
+  background: #101010;
+
+  color: white;
+
+  font-size: 11px;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.add-cart-btn span {
+  margin-left: 10px;
+
+  font-size: 16px;
+}
+
+.add-cart-btn:hover {
+  background: #C9A227;
+
+  border-color: #C9A227;
+
+  color: #101010;
+}
+
+
+/* =========================================
+   OFFER BANNER
+========================================= */
+
+.men-offer {
+  min-height: 400px;
+
+  background:
+    linear-gradient(
+      rgba(16, 16, 16, 0.76),
+      rgba(16, 16, 16, 0.76)
+    ),
+    url("https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?auto=format&fit=crop&w=1600&q=80");
+
+  background-size: cover;
+
+  background-position: center;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  color: white;
+}
+
+.men-offer p {
+  color: #C9A227;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  letter-spacing: 3px;
+}
+
+.men-offer h2 {
+  font-size: 44px;
+
+  margin: 12px 0;
+}
+
+.men-offer h2 span {
+  color: #C9A227;
+}
+
+.men-offer h3 {
+  font-size: 20px;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 25px;
+}
+
+.men-offer button {
+  padding: 14px 28px;
+
+  border: none;
+
+  background: #C9A227;
+
+  color: #101010;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.men-offer button:hover {
+  background: white;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .men-products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .men-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .men-products-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+  .men-banner {
+    height: 300px;
+  }
+
+  .men-banner-content h1 {
+    font-size: 34px;
+  }
+
+  .men-intro {
+    padding: 55px 20px 30px;
+  }
+
+  .men-intro h2 {
+    font-size: 28px;
+  }
+
+  .men-products-section {
+    padding: 55px 5%;
+  }
+
+  .men-products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .men-product-image {
+    height: 430px;
+  }
+
+}

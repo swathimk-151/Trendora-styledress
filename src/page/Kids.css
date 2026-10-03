@@ -1,0 +1,619 @@
+/* =========================================
+   TRENDORA KIDS PAGE
+   ========================================= */
+
+.kids-page {
+  width: 100%;
+  background: #f7f5f0;
+  color: #171717;
+}
+
+
+/* =========================================
+   INTRO SECTION
+   ========================================= */
+
+.kids-intro {
+  text-align: center;
+  padding: 80px 8% 55px;
+  background: #ffffff;
+}
+
+.kids-small-title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #c9a227;
+  margin-bottom: 18px;
+}
+
+.kids-intro h1 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 22px;
+  color: #171717;
+}
+
+.kids-intro h1 span {
+  color: #c9a227;
+}
+
+.kids-description {
+  max-width: 750px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+}
+
+
+/* =========================================
+   CATEGORY BUTTONS
+   ========================================= */
+
+.kids-categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  padding: 30px 7%;
+
+  background: #ffffff;
+
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #ddd;
+}
+
+.kids-category-btn {
+  padding: 12px 21px;
+
+  background: transparent;
+
+  border: 1px solid #bdbdbd;
+
+  color: #333;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.kids-category-btn:hover {
+  background: #171717;
+  color: #c9a227;
+  border-color: #171717;
+}
+
+.kids-category-btn.active {
+  background: #171717;
+  color: #c9a227;
+  border-color: #171717;
+}
+
+
+/* =========================================
+   PRODUCTS SECTION
+   ========================================= */
+
+.kids-products {
+  padding: 70px 7%;
+  background: #f1eee8;
+}
+
+
+/* =========================================
+   PRODUCT HEADER
+   ========================================= */
+
+.kids-products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-bottom: 35px;
+}
+
+.kids-products-header p {
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: #c9a227;
+
+  margin-bottom: 8px;
+}
+
+.kids-products-header h2 {
+  font-size: 34px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  color: #171717;
+}
+
+.kids-products-header span {
+  font-size: 14px;
+  color: #666;
+}
+
+
+/* =========================================
+   PRODUCT GRID
+   ========================================= */
+
+.kids-product-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+
+/* =========================================
+   PRODUCT CARD
+   ========================================= */
+
+.kids-product-card {
+  position: relative;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  transition: 0.4s ease;
+}
+
+.kids-product-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   DISCOUNT BADGE
+   ========================================= */
+
+.kids-discount-badge {
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  z-index: 5;
+
+  background: #171717;
+
+  color: #c9a227;
+
+  padding: 8px 12px;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================
+   WISHLIST
+   ========================================= */
+
+   .product-heart {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  
+    width: 42px;
+    height: 42px;
+  
+    border: none;
+    border-radius: 50%;
+  
+    background: white;
+    color: #171717;
+  
+    font-size: 22px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    cursor: pointer;
+  
+    transition: 0.3s ease;
+  
+    z-index: 5;
+  }
+  
+  .product-heart:hover {
+    background: #171717;
+    color: #c9a227;
+  }
+  
+
+/* =========================================
+   PRODUCT IMAGE
+   ========================================= */
+
+.kids-product-image {
+  width: 100%;
+
+  height: 390px;
+
+  overflow: hidden;
+
+  background: #eeeeee;
+}
+
+.kids-product-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: 0.5s ease;
+}
+
+.kids-product-card:hover
+.kids-product-image img {
+  transform: scale(1.06);
+}
+
+
+/* =========================================
+   PRODUCT INFORMATION
+   ========================================= */
+
+.kids-product-info {
+  padding: 20px;
+}
+
+.kids-product-category {
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  color: #999;
+
+  margin-bottom: 8px;
+}
+
+.kids-product-info h3 {
+  font-size: 17px;
+
+  font-weight: 600;
+
+  color: #171717;
+
+  margin-bottom: 12px;
+}
+
+
+/* =========================================
+   PRICE
+   ========================================= */
+
+.kids-product-price {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 18px;
+}
+
+.kids-current-price {
+  font-size: 18px;
+
+  font-weight: 700;
+
+  color: #171717;
+}
+
+.kids-old-price {
+  font-size: 14px;
+
+  color: #999;
+
+  text-decoration: line-through;
+}
+
+
+/* =========================================
+   ADD TO CART
+   ========================================= */
+
+.kids-add-cart-btn {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #171717;
+
+  background: #171717;
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.kids-add-cart-btn:hover {
+  background: #c9a227;
+
+  border-color: #c9a227;
+
+  color: #171717;
+}
+
+
+/* =========================================
+   OFFER SECTION
+   ========================================= */
+
+.kids-offer {
+  padding: 70px 20px;
+
+  text-align: center;
+
+  background: #101010;
+
+  color: #ffffff;
+}
+
+.kids-offer p {
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 4px;
+
+  color: #c9a227;
+
+  margin-bottom: 15px;
+}
+
+.kids-offer h2 {
+  font-size: 38px;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 10px;
+}
+
+.kids-offer span {
+  display: block;
+
+  color: #cccccc;
+
+  font-size: 15px;
+
+  margin-bottom: 25px;
+}
+
+.kids-offer button {
+  padding: 13px 30px;
+
+  background: #c9a227;
+
+  color: #171717;
+
+  border: 1px solid #c9a227;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.kids-offer button:hover {
+  background: transparent;
+
+  color: #c9a227;
+}
+
+
+/* =========================================
+   LARGE TABLET
+   ========================================= */
+
+@media (max-width: 1100px) {
+
+  .kids-product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .kids-product-image {
+    height: 350px;
+  }
+
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 850px) {
+
+  .kids-intro {
+    padding: 60px 6% 45px;
+  }
+
+  .kids-intro h1 {
+    font-size: 40px;
+  }
+
+  .kids-products {
+    padding: 55px 5%;
+  }
+
+  .kids-product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .kids-product-image {
+    height: 400px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .kids-intro {
+    padding: 45px 20px 35px;
+  }
+
+  .kids-intro h1 {
+    font-size: 30px;
+  }
+
+  .kids-description {
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+
+  .kids-categories {
+    padding: 20px 15px;
+
+    gap: 8px;
+  }
+
+  .kids-category-btn {
+    padding: 9px 13px;
+
+    font-size: 10px;
+  }
+
+
+  .kids-products {
+    padding: 40px 15px;
+  }
+
+
+  .kids-products-header {
+    display: block;
+
+    margin-bottom: 25px;
+  }
+
+  .kids-products-header h2 {
+    font-size: 26px;
+  }
+
+  .kids-products-header span {
+    display: block;
+
+    margin-top: 10px;
+  }
+
+
+  .kids-product-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+  }
+
+
+  .kids-product-image {
+    height: 250px;
+  }
+
+
+  .kids-product-info {
+    padding: 13px;
+  }
+
+  .kids-product-info h3 {
+    font-size: 14px;
+  }
+
+
+  .kids-current-price {
+    font-size: 15px;
+  }
+
+  .kids-old-price {
+    font-size: 12px;
+  }
+
+
+  .kids-discount-badge {
+    top: 8px;
+
+    left: 8px;
+
+    padding: 6px 8px;
+
+    font-size: 9px;
+  }
+
+
+  .kids-wishlist-btn {
+    width: 32px;
+
+    height: 32px;
+
+    font-size: 18px;
+
+    top: 8px;
+
+    right: 8px;
+  }
+
+
+  .kids-add-cart-btn {
+    padding: 10px 5px;
+
+    font-size: 10px;
+  }
+
+
+  .kids-offer {
+    padding: 50px 20px;
+  }
+
+  .kids-offer h2 {
+    font-size: 28px;
+  }
+
+}

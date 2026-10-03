@@ -1,0 +1,682 @@
+
+.about-page {
+  width: 100%;
+  background: #f7f5f0;
+  color: #171717;
+}
+.about-hero {
+  position: relative;
+
+  min-height: 600px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  background-image:
+    url("https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=1800&q=85");
+
+  background-size: cover;
+
+  background-position: center;
+}
+
+.about-hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.about-hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 850px;
+
+  padding: 30px;
+
+  color: white;
+}
+
+.about-hero-content > p:first-child {
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 5px;
+
+  color: #c99545;
+
+  margin-bottom: 22px;
+}
+
+.about-hero-content h1 {
+  font-size: 62px;
+
+  line-height: 1.1;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 25px;
+}
+
+.about-hero-content h1 span {
+  color: #c99545;
+}
+
+.about-hero-text {
+  max-width: 650px;
+
+  margin: auto;
+
+  color: #eeeeee;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+}
+
+.about-label {
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 4px;
+
+  color: #c99545;
+
+  margin-bottom: 15px;
+}
+
+.about-story {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  min-height: 650px;
+
+  background: #ffffff;
+}
+
+.about-story-image {
+  width: 100%;
+
+  min-height: 600px;
+
+  overflow: hidden;
+}
+
+.about-story-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.about-story-content {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 80px 9%;
+}
+
+.about-story-content h2 {
+  font-size: 42px;
+
+  line-height: 1.2;
+
+  margin-bottom: 25px;
+}
+
+.about-story-content h2 span {
+  color: #c99545;
+}
+
+.about-story-content p:not(.about-label) {
+  font-size: 15px;
+
+  line-height: 1.9;
+
+  color: #666;
+
+  margin-bottom: 17px;
+}
+
+
+/* =========================================
+   MISSION
+   ========================================= */
+
+.about-mission {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  background: #101010;
+
+  color: #ffffff;
+}
+
+.about-mission-content {
+  padding: 90px 10%;
+}
+
+.about-mission-content h2 {
+  font-size: 42px;
+
+  line-height: 1.2;
+
+  margin-bottom: 25px;
+}
+
+.about-mission-content h2 span {
+  color: #c99545;
+}
+
+.about-mission-content p:not(.about-label) {
+  color: #cccccc;
+
+  font-size: 15px;
+
+  line-height: 1.9;
+
+  margin-bottom: 18px;
+}
+
+
+/* =========================================
+   MISSION HIGHLIGHTS
+   ========================================= */
+
+.mission-highlight {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  align-content: center;
+
+  padding: 70px 10%;
+
+  background: #171717;
+}
+
+.mission-highlight > div {
+  padding: 25px 0;
+
+  border-bottom: 1px solid #333;
+}
+
+.mission-highlight > div:last-child {
+  border-bottom: none;
+}
+
+.mission-highlight strong {
+  font-size: 13px;
+
+  color: #c99545;
+
+  letter-spacing: 2px;
+}
+
+.mission-highlight h3 {
+  margin: 8px 0;
+
+  font-size: 21px;
+
+  letter-spacing: 1px;
+}
+
+.mission-highlight p {
+  color: #999;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   WHY TRENDORA
+   ========================================= */
+
+.why-trendora {
+  padding: 90px 7%;
+
+  background: #f1eee8;
+}
+
+.why-header {
+  text-align: center;
+
+  max-width: 700px;
+
+  margin: 0 auto 55px;
+}
+
+.why-header h2 {
+  font-size: 42px;
+
+  margin-bottom: 15px;
+}
+
+.why-header h2 span {
+  color: #c99545;
+}
+
+.why-header > p:last-child {
+  color: #777;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   WHY GRID
+   ========================================= */
+
+.why-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.why-card {
+  background: #ffffff;
+
+  padding: 35px 28px;
+
+  min-height: 260px;
+
+  border-top: 3px solid transparent;
+
+  transition: 0.3s ease;
+}
+
+.why-card:hover {
+  border-top-color:#c99545;
+
+  transform: translateY(-5px);
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.why-number {
+  color: #c99545;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 30px;
+}
+
+.why-card h3 {
+  font-size: 17px;
+
+  margin-bottom: 15px;
+}
+
+.why-card p {
+  color: #777;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   COLLECTIONS
+   ========================================= */
+
+.about-collections {
+  padding: 90px 7%;
+
+  background: #ffffff;
+}
+
+.collections-heading {
+  text-align: center;
+
+  margin-bottom: 45px;
+}
+
+.collections-heading h2 {
+  font-size: 42px;
+}
+
+.collections-heading h2 span {
+  color: #c99545;
+}
+
+
+/* =========================================
+   COLLECTION GRID
+   ========================================= */
+
+.collection-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+.collection-card {
+  position: relative;
+
+  height: 520px;
+
+  overflow: hidden;
+
+  background: #171717;
+}
+
+.collection-card img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: 0.6s ease;
+}
+
+.collection-card:hover img {
+  transform: scale(1.06);
+}
+
+.collection-card::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8),
+      transparent 60%
+    );
+}
+
+.collection-overlay {
+  position: absolute;
+
+  z-index: 2;
+
+  left: 30px;
+
+  right: 30px;
+
+  bottom: 30px;
+
+  color: #ffffff;
+}
+
+.collection-overlay p {
+  color: #c99545;
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 8px;
+}
+
+.collection-overlay h3 {
+  font-size: 32px;
+
+  margin-bottom: 7px;
+}
+
+.collection-overlay span {
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  color: #dddddd;
+}
+
+
+/* =========================================
+   QUOTE
+   ========================================= */
+
+.about-quote {
+  padding: 100px 20px;
+
+  text-align: center;
+
+  background: #c99545;
+
+  color: #171717;
+}
+
+.about-quote p {
+  font-size: 38px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 15px;
+}
+
+.about-quote span {
+  font-size: 15px;
+
+  color: #333;
+}
+
+
+/* =========================================
+   CTA
+   ========================================= */
+
+.about-cta {
+  padding: 90px 20px;
+
+  text-align: center;
+
+  background: #101010;
+
+  color: #ffffff;
+}
+
+.about-cta p {
+  color: #c99545;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 4px;
+
+  margin-bottom: 15px;
+}
+
+.about-cta h2 {
+  font-size: 42px;
+
+  margin-bottom: 28px;
+}
+
+.about-cta h2 span {
+  color: #c99545;
+}
+
+.about-cta button {
+  padding: 14px 32px;
+
+  border: 1px solid #c99545;
+
+  background: #c99545;
+
+  color: #171717;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.about-cta button:hover {
+  background: transparent;
+
+  color: #c99545;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+  .about-hero-content h1 {
+    font-size: 50px;
+  }
+
+  .about-story,
+  .about-mission {
+    grid-template-columns: 1fr;
+  }
+
+  .about-story-image {
+    min-height: 500px;
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .collection-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .about-hero {
+    min-height: 500px;
+  }
+
+  .about-hero-content {
+    padding: 20px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 36px;
+  }
+
+  .about-hero-text {
+    font-size: 14px;
+  }
+
+
+  .about-story-image {
+    min-height: 400px;
+  }
+
+  .about-story-content {
+    padding: 55px 25px;
+  }
+
+  .about-story-content h2 {
+    font-size: 31px;
+  }
+
+
+  .about-mission-content {
+    padding: 60px 25px;
+  }
+
+  .about-mission-content h2 {
+    font-size: 31px;
+  }
+
+  .mission-highlight {
+    padding: 45px 25px;
+  }
+
+
+  .why-trendora {
+    padding: 60px 20px;
+  }
+
+  .why-header h2 {
+    font-size: 31px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .about-collections {
+    padding: 60px 20px;
+  }
+
+  .collections-heading h2 {
+    font-size: 31px;
+  }
+
+  .collection-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-card {
+    height: 450px;
+  }
+
+
+  .about-quote {
+    padding: 70px 20px;
+  }
+
+  .about-quote p {
+    font-size: 26px;
+  }
+
+
+  .about-cta {
+    padding: 65px 20px;
+  }
+
+  .about-cta h2 {
+    font-size: 30px;
+  }
+
+}

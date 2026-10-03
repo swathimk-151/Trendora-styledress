@@ -1,0 +1,102 @@
+
+.signup-image {
+  background-image: url("https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1000&q=85");
+}
+
+.signup-message {
+  color: #ffffff;
+  max-width: 400px;
+}
+
+.signup-message > p:first-child {
+  color: #c9a227;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+}
+
+.signup-message h1 {
+  font-size: 55px;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+.signup-message h1 span {
+  color: #c9a227;
+  display: block;
+}
+
+.signup-line {
+  width: 55px;
+  height: 2px;
+  background: #c9a227;
+  margin-bottom: 20px;
+}
+
+.signup-description {
+  color: #eeeeee;
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 350px;
+}
+
+.signup-form-box {
+  max-width: 450px;
+}
+
+.signup-form-box .input-group {
+  margin-bottom: 15px;
+}
+
+.signup-form-box .auth-description {
+  margin-bottom: 25px;
+}
+
+.terms-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: #777;
+  font-size: 11px;
+  line-height: 1.5;
+  margin: 5px 0 20px;
+  cursor: pointer;
+}
+
+.terms-check input {
+  margin-top: 2px;
+  accent-color: #c9a227;
+}
+
+@media (max-width: 850px) {
+
+  .signup-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .signup-image {
+    min-height: 300px;
+  }
+
+  .signup-message h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .signup-image {
+    min-height: 240px;
+  }
+
+  .signup-message h1 {
+    font-size: 35px;
+  }
+
+  .signup-form-box h2 {
+    font-size: 24px;
+  }
+}
